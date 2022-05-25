@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.458), #0c477283),
+    url("/images/background-img.jpeg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+nav {
+  padding: 2rem 4rem;
+  background-color: #0c4772;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+  justify-content: space-between;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.492);
+}
+.logo-link:link {
+  text-decoration: none;
+}
+.logo {
+  width: 250px;
+  object-fit: cover;
+  border-radius: 40%;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  align-items: center;
+}
+.nav-link:link,
+.nav-link:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: #fec800;
+}
+.nav-btn:link,
+.nav-btn:visited {
+  background: #00172a;
+  padding: 1.2rem 3.2rem;
+  border-radius: 0.8rem;
+  transition: all 0.8s;
+}
+.nav-btn:hover,
+.nav-btn:active {
+  background: #334555;
+}
+.home-title {
+  text-align: center;
+  color: #fff;
+  font-size: 4.8rem;
+  font-weight: 900;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  text-shadow: 0 1.2rem 2.4rem #000000;
+}
+.text {
+  width: 62%;
+  padding: 3rem;
+  margin-left: 4rem;
+  background: #eee;
+  position: relative;
+  height: 20rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 1.2rem 3.2rem #000;
+}
+.home-paragraph {
+  color: #333;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.home-btn:link,
+.home-btn:visited {
+  /* color: #fff; */
+  /* font-size: 1.8rem; */
+  display: inline-block;
+  font-weight: 700;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.455);
+  position: absolute;
+  bottom: 0.3rem;
+  /* background-color: #0c4772; */
+  /* padding: 1.2rem 3.2rem; */
+  left: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  transform: translate(-50%, -50%);
+}
+/* about section */
+.about-container,
+.tours-container {
+  padding: 10rem 4rem;
+}
+.title {
+  text-align: center;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(to bottom, #0c4772, #fec800);
+  color: transparent;
+  padding-bottom: 6rem;
+  -webkit-background-clip: text;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  /* gap: 1.5rem; */
+}
+h4 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #555;
+}
+.firstParagraph {
+  margin-bottom: 2rem;
+}
+.about-paragraph {
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+/* tour section */
+.tours-container {
+  background-color: #eee;
+}
+.main-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+.card {
+  /* width: 30rem; */
+  background-color: #fff;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 1rem 1.2rem 2.4rem rgba(0, 0, 0, 0.45);
+  transition: all 0.3s;
+  /* display: flex;
+  flex-direction: column; */
+}
+.card:hover {
+  transform: translate(6px, -15px);
+}
+.card-content {
+  padding: 0rem 0.8rem 1.5rem;
+}
+.read-btn:link,
+.read-btn:visited {
+  display: flex;
+  margin: 0rem 1rem 2rem 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.img-card {
+  width: 100%;
+  /* height: 50%; */
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    0 83%
+  );
+}
+.schedule-title {
+  font-size: 1.6rem;
+}
+.schedule-date {
+  font-size: 1.6rem;
+  padding: 0rem 0rem 2rem 2rem;
+}
+.tour-title {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: linear-gradient(to right, #0c4772, #fec800);
+  color: transparent;
+  font-weight: 900;
+  /* text-shadow: 0 0rem 2rem rgba(0, 0, 0, 0.155); */
+  -webkit-background-clip: text;
+}
+.tour-text {
+  font-size: 1.6rem;
+  padding: 1.5rem 1rem 0;
+  color: #555;
+}
+.place-number {
+  text-align: right;
+  font-size: 1.6rem;
+  /* padding: 0rem 2rem 0rem 0rem; */
+}
+.place-title {
+  padding: 0rem 2.2rem 0rem 0rem;
+}
+
+.place {
+  margin: 0rem 1rem;
+}
