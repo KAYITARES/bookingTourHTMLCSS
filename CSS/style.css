@@ -13,7 +13,7 @@ body {
 
 header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.458), #0c477283),
-    url("/images/background-img.jpeg");
+    url("../images/background-img.jpeg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
